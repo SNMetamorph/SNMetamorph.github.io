@@ -1,0 +1,10 @@
+#plot2d-menu {
+    border-radius: 2px;
+    border: solid rgb(167, 167, 167) 1px;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    width: 250px;
+    height: 250px;
+    padding: 10px;
+}

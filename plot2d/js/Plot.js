@@ -36,7 +36,6 @@ class Plot {
         if (!this.canDragPlot) {
             return;
         }
-
         const startPoint = this.renderArea.getStartPoint();
         startPoint.x += -event.movementX / this.renderArea.getUnitScale().width;
         startPoint.y += event.movementY / this.renderArea.getUnitScale().height;
@@ -59,12 +58,14 @@ class Plot {
     }
 
     onMouseWheel(event) {
-        const zoomFactorStep = 0.25;
-        const zoomFactor = event.deltaY > 0 ? 1 - zoomFactorStep : 1 + zoomFactorStep;
+        // const zoomFactorStep = 0.1;
+        // const zoomFactor = event.deltaY > 0 ? 1 - zoomFactorStep : 1 + zoomFactorStep;
+        const scaleStep = 5;
+        const zoomStep = event.deltaY > 0 ? -scaleStep : scaleStep;
         const unitScale = this.renderArea.getUnitScale();
         const newUnitScale = { 
-            width: unitScale.width * zoomFactor,
-            height: unitScale.height * zoomFactor
+            width: unitScale.width + zoomStep,
+            height: unitScale.height + zoomStep
         }
         
         if (newUnitScale.width > 1 && newUnitScale.height > 1)
@@ -90,11 +91,36 @@ class Plot {
         this.renderAxis(this.colorTheme.axisLine, this.colorTheme.axisLineWidth);
     }
 
+    getClosestValueFromRange(value, range) {
+        let minDistanceValue = range[0];
+        let minDistance = Math.abs(value - range[0]);
+        range.forEach((elem) => {
+            const distance = Math.abs(elem - value);
+            if (distance < minDistance) {
+                minDistanceValue = elem;
+                minDistance = distance;
+            }
+        });
+        return minDistanceValue;
+    }
+
     getGridStepSize() {
-        const unitScale = this.renderArea.getUnitScale();
         let stepSize = {}
-        stepSize.x = 1 / Math.floor(unitScale.width / 40);
-        stepSize.y = 1 / Math.floor(unitScale.height / 40);
+        const unitScale = this.renderArea.getUnitScale();
+        let cellsPerUnit = {
+            x: Math.floor(unitScale.width / 40),
+            y: Math.floor(unitScale.height / 40)
+        }
+
+        // x1, x2, x4, x5, x8, x10, x20, x40, x50, x80
+        const scaleFactors = [1, 2, 4, 5, 8];
+        const levelX = Math.floor((cellsPerUnit.x - 1) / 20);
+        const levelY = Math.floor((cellsPerUnit.y - 1) / 20);
+        const ax = this.getClosestValueFromRange(cellsPerUnit.x / Math.pow(10, levelX), scaleFactors) * Math.pow(10, levelX);
+        const ay = this.getClosestValueFromRange(cellsPerUnit.y / Math.pow(10, levelY), scaleFactors) * Math.pow(10, levelY);
+        console.log("c ", cellsPerUnit.x, " ax ", ax, " ay ", ay);
+        stepSize.x = 1 / ax;
+        stepSize.y = 1 / ay;
         return stepSize;
     }
 

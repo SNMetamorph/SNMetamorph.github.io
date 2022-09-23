@@ -1,0 +1,24 @@
+---
+layout: default
+title: Projects
+---
+
+# PrimeXT
+Modern SDK for the Xash3D FWGS engine, to work on modern platforms with cross-platform support and improved graphics/physics, while retaining all the features and approaches to work inherent in GoldSrc and Xash3D. Based on XashXT, and therefore has all the functionality inherent in XashXT and Spirit Of Half-Life. Suitable for creating both singleplayer and multiplayer mods. Development started in August 2021.  
+  
+[GitHub page](https://github.com/SNMetamorph/PrimeXT)  
+[Documentation page](https://snmetamorph.github.io/PrimeXT/)  
+
+# GoldSrc Monitor
+Simple and standalone utility for mapping/scripting/speedrunning or researching 
+games based on GoldSrc/Xash3D FWGS engine (such as CS 1.6, HL, HL:OF, HL:BS, and other HL-mods). Uses RapidJSON and PolyHook 2.  
+  
+[GitHub page](https://github.com/SNMetamorph/goldsrc-monitor)  
+[Gamebanana page](https://gamebanana.com/mods/39429)  
+[Dev-CS page](https://dev-cs.ru/resources/1035/)  
+
+# mem2pix
+Crossplatform utility for real-time visualization process memory content as image. Based on SDL2, works on Windows and Linux. 
+Supports many pixel formats, works even on Windows XP. 
+  
+[GitHub page](https://github.com/SNMetamorph/mem2pix)  

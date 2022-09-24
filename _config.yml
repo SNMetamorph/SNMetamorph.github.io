@@ -15,20 +15,31 @@
 # in the templates via {{ site.myvariable }}.
 
 title: SNMetamorph
+author:
+  name: SNMetamorph
 description: > # this means to ignore newlines until "baseurl:"
   Personal technical blog. Writing about different stuff like 
   programming, electronics, reverse-engineering, etc.
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://snmetamorph.github.io/"
-theme: minima
-markdown: kramdown
-twitter_username: SNMetamorph
-github_username: SNMetamorph
 
-plugins:
-  - jekyll-feed
-  - jekyll-seo-tag
+show_excerpts: false # set to true to show excerpts on the homepage
+
+# Minima date format
+# refer to https://shopify.github.io/liquid/filters/date/ if you want to customize this
+minima:
+  date_format: "%b %-d, %Y"
+  skin: auto
+
+  # generate social links in footer
+  social_links:
+    github:  jekyll
 
 header_pages:
   - posts.html
   - projects.md
+
+# Build settings
+remote_theme: jekyll/minima
+
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag

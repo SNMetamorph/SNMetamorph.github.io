@@ -21,6 +21,7 @@ description: > # this means to ignore newlines until "baseurl:"
   Personal technical blog. Writing about different stuff like 
   programming, electronics, reverse-engineering, etc.
 
+google_analytics: G-BHY0818ZGZ
 show_excerpts: false # set to true to show excerpts on the homepage
 
 # Minima date format

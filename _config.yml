@@ -16,7 +16,7 @@
 
 title: SNMetamorph
 description: > # this means to ignore newlines until "baseurl:"
-  Personal technical blog. Write about different stuff like 
+  Personal technical blog. Writing about different stuff like 
   programming, electronics, reverse-engineering, etc.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://snmetamorph.github.io/"

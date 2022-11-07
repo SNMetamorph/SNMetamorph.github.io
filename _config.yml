@@ -32,7 +32,11 @@ minima:
 
   # generate social links in footer
   social_links:
-    github:  jekyll
+    github: SNMetamorph
+    devto: snmetamorph
+    youtube_channel: UC2ewuR5yT6FXhEE6pNtqElw
+    youtube_channel_name: SNMetamorph
+    telegram: SNMetamorph
 
 header_pages:
   - posts.html

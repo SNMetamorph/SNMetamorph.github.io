@@ -32,18 +32,19 @@ minima:
 
   # generate social links in footer
   social_links:
-    github: SNMetamorph
-    devto: snmetamorph
-    youtube_channel: UC2ewuR5yT6FXhEE6pNtqElw
-    youtube_channel_name: SNMetamorph
-    telegram: SNMetamorph
+    - { platform: devto,          user_url: "https://dev.to/snmetamorph" }
+    - { platform: github,         user_url: "https://github.com/SNMetamorph" }
+    - { platform: telegram,       user_url: "https://t.me/SNMetamorph" }
+    - { platform: youtube,        user_url: "https://www.youtube.com/@snmetamorph_yt" }
 
 header_pages:
   - posts.html
   - projects.md
 
 # Build settings
-remote_theme: jekyll/minima
+# Remote theme locked to specific commit, therefore up-to-date version won't be used automatically
+# remember to update locked commit periodically to keep theme updated.
+remote_theme: jekyll/minima@1e6da7d
 
 plugins:
   - jekyll-feed

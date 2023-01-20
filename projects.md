@@ -29,4 +29,3 @@ Created as modern replacement for gFlip utility.
   
 [Gamebanana page](https://gamebanana.com/tools/7299)  
 [Dev-CS page](https://dev-cs.ru/resources/1357/)  
-

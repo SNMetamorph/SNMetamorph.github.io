@@ -112,7 +112,7 @@ gamedir "gameres"
 Important tip: in this file, the value of the *gamedir* parameter must match the name of the working directory. 
 Next, you need to put the WAD files used in the working directory, create a subdirectory called maps inside it, 
 and put the *.rad* file and the map source in the form of a *.map* file into the subdirectory. 
-All the necessary files that I used are available at ![this link](/assets/crossfire_mirror_sources.7z).  
+All the necessary files that I used are available at [this link](/assets/crossfire_mirror_sources.7z).  
   
 Now you can try to compile the map, and all that remains is to wait.
 ```

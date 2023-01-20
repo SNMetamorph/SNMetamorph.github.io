@@ -22,3 +22,11 @@ Crossplatform utility for real-time visualization process memory content as imag
 Supports many pixel formats, works even on Windows XP. 
   
 [GitHub page](https://github.com/SNMetamorph/mem2pix)  
+
+# mdl-flip
+Fast, standalone and self-contained (doesn't require Visual Basic/VC++) and functional tool for flipping/mirroring GoldSrc/Xash3D models. 
+Created as modern replacement for gFlip utility.
+  
+[Gamebanana page](https://gamebanana.com/tools/7299)  
+[Dev-CS page](https://dev-cs.ru/resources/1357/)  
+

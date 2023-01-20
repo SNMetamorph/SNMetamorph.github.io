@@ -14,7 +14,7 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: SNMetamorph
+title: SNMetamorph's Blog
 author:
   name: SNMetamorph
 description: > # this means to ignore newlines until "baseurl:"
@@ -40,7 +40,8 @@ minima:
 header_pages:
   - posts.html
   - projects.md
-
+  - contributions.md
+  
 # Build settings
 # Remote theme locked to specific commit, therefore up-to-date version won't be used automatically
 # remember to update locked commit periodically to keep theme updated.

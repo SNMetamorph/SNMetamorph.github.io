@@ -14,7 +14,7 @@ It has 16 gigabytes of internal memory, 2 gigabytes of RAM. Based on the Allwinn
 From interfaces: has two USB 2.0 ports, composite video output, HDMI port. 
 Network access can be provided both via Wi-Fi and via an Ethernet port (I used a wired connection).
 
-| ![space-1.jpg](assets/img/hl1-maps-compiling/neofetch.jpg) | 
+| ![](/assets/img/hl1-maps-compiling/neofetch.jpg) | 
 |:--:| 
 | *Main information about TV-box system, shown by neofetch* |
 
@@ -55,8 +55,8 @@ After that, you can try to connect from the computer to the server. Please note 
 SSH server, not the usual 22. You can enter any username, but you need to enter the password 
 specified earlier. If the connection is successful, a shell will be displayed.
 
-![KiTTY Interface](assets/img/hl1-maps-compiling/kitty-shell-1.png)
-![KiTTY Shell after logging in](assets/img/hl1-maps-compiling/kitty-shell-2.png)
+![KiTTY Interface](/assets/img/hl1-maps-compiling/kitty-shell-1.png)
+![KiTTY Shell after logging in](/assets/img/hl1-maps-compiling/kitty-shell-2.png)
 
 # Building map compilers
 After completing all the preparatory procedures, you can go directly to the build procedure: the first step is to clone the sources into your home directory.
@@ -79,19 +79,19 @@ cmake .. -DBUILD_CLIENT=OFF -DBUILD_SERVER=OFF -DENABLE_PHYSX=OFF -DBUILD_GAME_L
 cmake --build . --config Release --parallel 4
 ```
 
-| ![](assets/img/hl1-maps-compiling/cmake-cache-generated.png) | 
+| ![](/assets/img/hl1-maps-compiling/cmake-cache-generated.png) | 
 |:--:| 
 | *CMake cache was successfully generated* |
 
 After executing the two commands described above, the build process will start.
-![](assets/img/hl1-maps-compiling/build-process-1.png)
+![](/assets/img/hl1-maps-compiling/build-process-1.png)
 
 If the build succeeds, it will look like this. If any errors occur, it is better to restart the assembly 
 in one thread, so it will be easier to find out exactly where the compilation error occurred. By the way, 
 on this set-top box, the assembly into 4 streams took about four minutes, taking into account the 
 fact that an IPTV player was running in the background.
 
-| ![](assets/img/hl1-maps-compiling/build-finished.png) | 
+| ![](/assets/img/hl1-maps-compiling/build-process-finished.png) | 
 |:--:| 
 | *Map compilers build successfully finished* |
 
@@ -112,7 +112,7 @@ gamedir "gameres"
 Important tip: in this file, the value of the *gamedir* parameter must match the name of the working directory. 
 Next, you need to put the WAD files used in the working directory, create a subdirectory called maps inside it, 
 and put the *.rad* file and the map source in the form of a *.map* file into the subdirectory. 
-All the necessary files that I used are available at ![this link](assets/crossfire_mirror_sources.7z).  
+All the necessary files that I used are available at ![this link](/assets/crossfire_mirror_sources.7z).  
   
 Now you can try to compile the map, and all that remains is to wait.
 ```
@@ -127,7 +127,7 @@ The map compilation process consists of four steps. At the end of each stage, th
 If there are any problems during the compilation of the map, you can look at the log file in the maps subdirectory. 
 Also, you can add the -dev 5 startup option to compilers to display the process in more detail.
 
-| ![](assets/img/hl1-maps-compiling/map-compiled.png) | 
+| ![](/assets/img/hl1-maps-compiling/map-compiled.png) | 
 |:--:| 
 | *Last map compiling stage was finished* |
 
@@ -136,7 +136,7 @@ After the map successfully compiled on the TV-box, I decided to rebuild the same
 and then compare these two maps. Ideally, there should be no visible differences. I will test this whole thing 
 in the PrimeXT mod, which is based on the Xash3D FWGS engine.
 
-| ![](assets/img/hl1-maps-compiling/maps-list.png) | 
+| ![](/assets/img/hl1-maps-compiling/maps-list.png) | 
 |:--:| 
 | *Maps build on different architecture and platform* |
 
@@ -210,16 +210,16 @@ these differences, but most likely they are completely uncritical.
 Next, it makes sense to compare if there are any visual differences on the map itself.
 
 ## Screenshots of map compiled on my PC
-![](assets/img/hl1-maps-compiling/ground-truth-1.png)
-![](assets/img/hl1-maps-compiling/ground-truth-2.png)
-![](assets/img/hl1-maps-compiling/ground-truth-3.png)
-![](assets/img/hl1-maps-compiling/ground-truth-4.png)
+![](/assets/img/hl1-maps-compiling/ground-truth-1.png)
+![](/assets/img/hl1-maps-compiling/ground-truth-2.png)
+![](/assets/img/hl1-maps-compiling/ground-truth-3.png)
+![](/assets/img/hl1-maps-compiling/ground-truth-4.png)
 
 ## Screenshots of map compiled on TV-box
-![](assets/img/hl1-maps-compiling/tvbox-map-1.png)
-![](assets/img/hl1-maps-compiling/tvbox-map-2.png)
-![](assets/img/hl1-maps-compiling/tvbox-map-3.png)
-![](assets/img/hl1-maps-compiling/tvbox-map-4.png)
+![](/assets/img/hl1-maps-compiling/tvbox-map-1.png)
+![](/assets/img/hl1-maps-compiling/tvbox-map-2.png)
+![](/assets/img/hl1-maps-compiling/tvbox-map-3.png)
+![](/assets/img/hl1-maps-compiling/tvbox-map-4.png)
 
 Personally, I didn’t notice any visual differences in lighting or geometry at all, which of course is good. 
 The experiment can be considered successful.

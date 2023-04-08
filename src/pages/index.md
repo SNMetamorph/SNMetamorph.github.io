@@ -1,5 +1,6 @@
 ---
 title: About me
+description: Personal technical blog. Writing about different stuff like programming, electronics, reverse-engineering, etc.
 ---
 
 # About me

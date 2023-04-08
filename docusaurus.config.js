@@ -7,7 +7,7 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   title: 'SNMetamorph\'s Blog',
-  tagline: 'Dinosaurs are cool',
+  tagline: 'Personal technical blog. Writing about different stuff like programming, electronics, reverse-engineering, etc.',
   favicon: 'img/favicon.ico',
 
   // Set the production url of your site here
@@ -44,6 +44,14 @@ const config = {
         },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
+        },
+        gtag: {
+          trackingID: 'G-BHY0818ZGZ',
+          anonymizeIP: false,
+        },
+        sitemap: {
+          changefreq: 'daily',
+          priority: 0.5,
         },
       }),
     ],

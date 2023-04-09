@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunksnmetamorph_blog=self.webpackChunksnmetamorph_blog||[]).push([[5016],{8483:s=>{s.exports=JSON.parse('{"label":"linux","permalink":"/posts/tags/linux","allTagsPath":"/posts/tags","count":1}')}}]);

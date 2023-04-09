@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunksnmetamorph_blog=self.webpackChunksnmetamorph_blog||[]).push([[8478],{1691:s=>{s.exports=JSON.parse('{"label":"win32","permalink":"/posts/tags/win-32","allTagsPath":"/posts/tags","count":1}')}}]);

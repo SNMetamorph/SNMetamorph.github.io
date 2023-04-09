@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunksnmetamorph_blog=self.webpackChunksnmetamorph_blog||[]).push([[2535],{5641:e=>{e.exports=JSON.parse('{"title":"Recent posts","items":[{"title":"Compiling Half-Life 1 maps on Android TV-box","permalink":"/posts/compiling-hl1-maps"},{"title":"Windows typical exception codes cheatsheet","permalink":"/posts/exceptions-win32"}]}')}}]);

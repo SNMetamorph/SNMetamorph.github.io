@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunksnmetamorph_blog=self.webpackChunksnmetamorph_blog||[]).push([[5231],{8650:s=>{s.exports=JSON.parse('{"label":"winapi","permalink":"/posts/tags/winapi","allTagsPath":"/posts/tags","count":1}')}}]);

@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunksnmetamorph_blog=self.webpackChunksnmetamorph_blog||[]).push([[9166],{9905:s=>{s.exports=JSON.parse('{"label":"xash3d","permalink":"/posts/tags/xash-3-d","allTagsPath":"/posts/tags","count":1}')}}]);

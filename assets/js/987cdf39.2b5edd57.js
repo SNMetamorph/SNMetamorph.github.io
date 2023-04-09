@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunksnmetamorph_blog=self.webpackChunksnmetamorph_blog||[]).push([[1472],{3120:s=>{s.exports=JSON.parse('{"label":"primext","permalink":"/posts/tags/primext","allTagsPath":"/posts/tags","count":1}')}}]);

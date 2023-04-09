@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunksnmetamorph_blog=self.webpackChunksnmetamorph_blog||[]).push([[9063],{5419:s=>{s.exports=JSON.parse('{"label":"gamedev","permalink":"/posts/tags/gamedev","allTagsPath":"/posts/tags","count":1}')}}]);

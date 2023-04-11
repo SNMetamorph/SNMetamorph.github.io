@@ -4,11 +4,12 @@ import { useBlogPost } from "@docusaurus/theme-common/internal";
 import UtterancesComments from "../../components/UtterancesComments";
 
 export default function BlogPostItemWrapper(props) {
-  const { isBlogPostPage } = useBlogPost();
+  const { metadata } = useBlogPost();
+  const { comments = true } = metadata;
   return (
     <>
       <BlogPostItem {...props} />
-      {isBlogPostPage && <UtterancesComments />}
+      {metadata && comments && <UtterancesComments />}
     </>
   );
 }

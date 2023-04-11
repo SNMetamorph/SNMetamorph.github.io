@@ -76,25 +76,20 @@ const config = {
       footer: {
         links: [
           {
-            title: 'Community',
-            items: [
-              {
-                label: 'Dev.to',
-                href: 'https://dev.to/snmetamorph',
-              },
-              {
-                label: 'GitHub',
-                href: 'https://github.com/SNMetamorph',
-              },
-              {
-                label: 'Telegram',
-                href: 'https://t.me/SNMetamorph',
-              },
-              {
-                label: 'YouTube',
-                href: 'https://www.youtube.com/@snmetamorph_yt',
-              },
-            ],
+            label: 'Dev.to',
+            href: 'https://dev.to/snmetamorph',
+          },
+          {
+            label: 'GitHub',
+            href: 'https://github.com/SNMetamorph',
+          },
+          {
+            label: 'Telegram',
+            href: 'https://t.me/SNMetamorph',
+          },
+          {
+            label: 'YouTube',
+            href: 'https://www.youtube.com/@snmetamorph_yt',
           },
         ],
         copyright: `Copyright © ${new Date().getFullYear()} SNMetamorph. Built with Docusaurus.`,

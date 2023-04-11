@@ -1,8 +1,8 @@
 import React from 'react';
 import LinkItem from '@theme/Footer/LinkItem';
-function Separator() {
-  return <span className="footer__link-separator">·</span>;
-}
+import styles from './styles.module.css';
+import clsx from 'clsx';
+
 function SimpleLinkItem({item}) {
   return item.html ? (
     <span
@@ -15,14 +15,14 @@ function SimpleLinkItem({item}) {
     <LinkItem item={item} />
   );
 }
+
 export default function FooterLinksSimple({links}) {
   return (
-    <div className="footer__links text--center">
-      <div className="footer__links">
+    <div className="text--center">
+      <div className={clsx("footer__links ", styles.footerLinksBlock)}>
         {links.map((item, i) => (
           <React.Fragment key={i}>
             <SimpleLinkItem item={item} />
-            {links.length !== i + 1 && <Separator />}
           </React.Fragment>
         ))}
       </div>

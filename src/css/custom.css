@@ -9,13 +9,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
 
 :root {
-  --ifm-color-primary: #2c671d;
-  --ifm-color-primary-dark: #285d1a;
-  --ifm-color-primary-darker: #255819;
-  --ifm-color-primary-darkest: #1f4814;
-  --ifm-color-primary-light: #307120;
-  --ifm-color-primary-lighter: #337621;
-  --ifm-color-primary-lightest: #398626;
+  --ifm-color-primary: #2f7517;
+  --ifm-color-primary-dark: #2a6915;
+  --ifm-color-primary-darker: #286314;
+  --ifm-color-primary-darkest: #215210;
+  --ifm-color-primary-light: #348119;
+  --ifm-color-primary-lighter: #17390b;
+  --ifm-color-primary-lightest: #193e0c;
   --ifm-code-font-size: 95%;
   --ifm-font-family-base: 'Open Sans', system-ui, -apple-system;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
@@ -23,12 +23,12 @@
 
 /* For readability concerns, you should choose a lighter palette in dark mode. */
 [data-theme='dark'] {
-  --ifm-color-primary: #51ba2e;
-  --ifm-color-primary-dark: #49a729;
-  --ifm-color-primary-darker: #459e27;
-  --ifm-color-primary-darkest: #429725;
-  --ifm-color-primary-light: #59cc33;
-  --ifm-color-primary-lighter: #61cf3c;
-  --ifm-color-primary-lightest: #77d658;
+  --ifm-color-primary: #86e168;
+  --ifm-color-primary-dark: #70dc4d;
+  --ifm-color-primary-darker: #65d93f;
+  --ifm-color-primary-darkest: #4cc026;
+  --ifm-color-primary-light: #9ce683;
+  --ifm-color-primary-lighter: #a7e991;
+  --ifm-color-primary-lightest: #c8f1ba;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
 }

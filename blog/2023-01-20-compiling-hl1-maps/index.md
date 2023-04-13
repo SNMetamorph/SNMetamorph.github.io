@@ -2,7 +2,7 @@
 slug: compiling-hl1-maps
 title: Compiling Half-Life 1 maps on Android TV-box
 authors: snmetamorph
-tags: [gamedev, half-life, xash3d, primext, android, linux, modding, mapping, termux, vhlt, zhlt, valve, cmake, crossplatform]
+tags: [gamedev, half-life, xash3d, primext, android, linux, modding, mapping, termux, vhlt, zhlt, p2st, valve, cmake, crossplatform]
 description: "I have been modding the legendary Half-Life 1 for these years, and somehow quite spontaneously I thought: 
 how cool it would be to be able to compile maps on some platform other than the usual x86 and amd64... 
 Then I remembered that I have an Android TV box at home that, in theory, could be used for this purpose."
@@ -13,7 +13,7 @@ how cool it would be to be able to compile maps on some platform other than the 
 Then I remembered that I have an Android TV box at home that, in theory, could be used for this purpose. 
 So, why not? This is how all this things was started.
 
-# What's we have?
+## What's we have?
 In stock, I had a budget GoldMaster I-905 TV set-top box, which was completely unremarkable. 
 It has 16 gigabytes of internal memory, 2 gigabytes of RAM. Based on the Allwinner H313 processor. 
 From interfaces: has two USB 2.0 ports, composite video output, HDMI port. 
@@ -29,7 +29,7 @@ from my PrimeXT project: they are the most up-to-date at the moment, they will b
 under some exotic platform, unlike all other variations. The game itself, as well as all related utilities, 
 including map compilers, are written in C/C++. PrimeXT uses the CMake build system.
 
-# Preparing
+## Preparing
 After a short search for information, I found out that in order to build C++ projects straight on Android, I need [Termux](https://termux.dev/en/). 
 It needs to be downloaded from the [F-Droid repository](https://f-droid.org/ru/packages/com.termux/) as the version 
 published on Google Play [has been deprecated](https://www.reddit.com/r/termux/comments/pkujfa/important_deprecation_notice_for_google_play/) and is no longer supported.  
@@ -63,7 +63,7 @@ specified earlier. If the connection is successful, a shell will be displayed.
 ![KiTTY Interface](./img/kitty-shell-1.png)
 ![KiTTY Shell after logging in](./img/kitty-shell-2.png)
 
-# Building map compilers
+## Building map compilers
 After completing all the preparatory procedures, you can go directly to the build procedure: the first step is to clone the sources into your home directory.
 ```
 cd ~
@@ -100,7 +100,7 @@ fact that an IPTV player was running in the background.
 |:--:| 
 | *Map compilers build successfully finished* |
 
-# Compiling map
+## Compiling map
 For the final step, you need to prepare a working directory that will contain 
 WAD files with textures, a *.rad* file, and a map source. In my case, this directory will be called **gameres**.
 ```
@@ -136,7 +136,7 @@ Also, you can add the -dev 5 startup option to compilers to display the process 
 |:--:| 
 | *Last map compiling stage was finished* |
 
-# Checking the results
+## Checking the results
 After the map successfully compiled on the TV-box, I decided to rebuild the same map on my computer 
 and then compare these two maps. Ideally, there should be no visible differences. I will test this whole thing 
 in the PrimeXT mod, which is based on the Xash3D FWGS engine.
@@ -229,7 +229,7 @@ Next, it makes sense to compare if there are any visual differences on the map i
 Personally, I didn’t notice any visual differences in lighting or geometry at all, which of course is good. 
 The experiment can be considered successful.
 
-# Resume
+## Resume
 Using the procedures described above, it is quite possible to compile maps for Half-Life 1 on almost any device that 
 is based on the Android or Linux OS. Unless, on too large and detailed maps, the device may not have enough RAM 
 for compilation. Can all this be useful to someone? Of course. For example, if for some reason you don’t want 

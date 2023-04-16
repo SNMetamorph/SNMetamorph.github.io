@@ -32,3 +32,11 @@
   --ifm-color-primary-lightest: #c8f1ba;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
 }
+
+.blog-list-page .markdown { 
+  display: none 
+}
+
+.blog-list-page .blog-post-comments {
+  display: none;
+}

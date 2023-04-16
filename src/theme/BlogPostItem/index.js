@@ -9,7 +9,7 @@ export default function BlogPostItemWrapper(props) {
   return (
     <>
       <BlogPostItem {...props} />
-      {metadata && comments && <UtterancesComments />}
+      {metadata && comments && <UtterancesComments className="blog-post-comments" />}
     </>
   );
 }

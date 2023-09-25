@@ -15,7 +15,9 @@ const config = {
   projectName: 'snmetamorph-blog', // Usually your repo name.
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
-  plugins: [],
+  plugins: [
+    require.resolve("docusaurus-plugin-image-zoom")
+  ],
   themes: [
     [
       require.resolve('@easyops-cn/docusaurus-search-local'),
@@ -97,6 +99,16 @@ const config = {
       prism: {
         theme: lightCodeTheme,
         darkTheme: darkCodeTheme,
+      },
+      zoom: {
+        selector: '.markdown :not(em) > img',
+        config: {
+          // options you can specify via https://github.com/francoischalifour/medium-zoom#usage
+          background: {
+            light: 'rgb(255, 255, 255)',
+            dark: 'rgb(50, 50, 50)'
+          }
+        }
       },
       metadata: [
         { name: 'keywords', content: 'hlsdk, gamedev, programming, open source, half-life, xash3d, fwgs, goldsrc, primext, mdl-flip, goldsrc-monitor, opengl, modding, snmetamorph, c++' }

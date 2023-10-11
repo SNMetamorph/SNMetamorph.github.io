@@ -17,6 +17,13 @@ games based on GoldSrc/Xash3D FWGS engine (such as CS 1.6, HL, HL:OF, HL:BS, and
 [Gamebanana page](https://gamebanana.com/mods/39429)  
 [Dev-CS page](https://dev-cs.ru/resources/1035/)  
 
+# FutabaVfdM202MD10C
+Library for Arduino framework for convenient working with vacuum fluorescent displays (VFD) based on Futaba M202MD10C board.
+Implements as much as possible functions that display supports, such as dimming, user-defined symbols, code pages, cursor visibility toggle, self-testing etc.
+
+[GitHub page](https://github.com/SNMetamorph/FutabaVfdM202MD10C)  
+[Arduino Reference](https://www.arduino.cc/reference/en/libraries/futabavfdm202md10c/)  
+
 # mem2pix
 Crossplatform utility for real-time visualization process memory content as image. Based on SDL2, works on Windows and Linux. 
 Supports many pixel formats, works even on Windows XP. 

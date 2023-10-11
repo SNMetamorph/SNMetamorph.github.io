@@ -41,7 +41,7 @@ pkg upgrade
 
 Now let's install the packages that we actually need.
 ```
-pkg install cmake git openssh
+pkg install cmake git openssh pkg-config ninja
 ```
     
 For more convenient work, I decided to run an SSH server on the TV-box and connect to it from my computer. 
@@ -71,6 +71,12 @@ git clone --recursive https://github.com/SNMetamorph/PrimeXT.git
 cd PrimeXT
 ```
 
+Next, you need to bootstrap vcpkg package manager. You can be warned about missing packages, so you'll need to install they too.
+```
+export VCPKG_FORCE_SYSTEM_BINARIES=1
+external/vcpkg/bootstrap-vcpkg.sh
+```
+
 Then, you need to create and prepare the directory in which the assembly will take place.
 ```
 cmake -E make_directory ./build
@@ -80,8 +86,8 @@ cd build
 And now it's time to generate the CMake cache and run the build. Since I'm only interested in map compilers, 
 I disabled building game libraries, the launcher, and other utilities. Also, to make the compilation of the project faster, I will set the build to 4 threads.
 ```
-cmake .. -DBUILD_CLIENT=OFF -DBUILD_SERVER=OFF -DENABLE_PHYSX=OFF -DBUILD_GAME_LAUNCHER=OFF -DBUILD_PXMV=OFF -DBUILD_PXSV=OFF -DENABLE_STATIC_LINKING=OFF -DCMAKE_BUILD_TYPE=Release
-cmake --build . --config Release --parallel 4
+cmake .. --preset utils-termux-debug
+cmake --build . --parallel 4
 ```
 
 | ![](./img/cmake-cache-generated.png) | 

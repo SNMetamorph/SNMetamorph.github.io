@@ -89,10 +89,6 @@ const config = {
             href: 'https://github.com/SNMetamorph',
           },
           {
-            label: 'Telegram',
-            href: 'https://t.me/SNMetamorph',
-          },
-          {
             label: 'YouTube',
             href: 'https://www.youtube.com/@snmetamorph_yt',
           },

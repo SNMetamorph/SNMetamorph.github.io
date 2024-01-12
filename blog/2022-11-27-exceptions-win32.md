@@ -1,7 +1,6 @@
 ---
 slug: exceptions-win32
 title: Windows typical exception codes cheatsheet
-authors: snmetamorph
 tags: [winapi, windows, win32, exception, cheatsheet, return code, STATUS_ACCESS_VIOLATION]
 description: For somehow strange reason, there is no handy list of common Windows application exception codes list on the entire Internet. At least, I can't find it in Google. So I decided to make this one here.
 ---

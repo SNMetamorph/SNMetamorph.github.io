@@ -1,7 +1,6 @@
 ---
 slug: compiling-hl1-maps
 title: Compiling Half-Life 1 maps on Android TV-box
-authors: snmetamorph
 tags: [gamedev, half-life, xash3d, primext, android, linux, modding, mapping, termux, vhlt, zhlt, p2st, valve, cmake, crossplatform]
 description: "I have been modding the legendary Half-Life 1 for these years, and somehow quite spontaneously I thought: 
 how cool it would be to be able to compile maps on some platform other than the usual x86 and amd64... 

@@ -1,7 +1,6 @@
 ---
 slug: vfd-toshiba-00dn901
 title: Breaking down Toshiba 00DN901 customer display
-authors: snmetamorph
 tags: [vfd, arduino, electronics, 00dn901, m202md10c, 41d0160, customer display]
 description: Investigating about how works Toshiba 00DN901 vacuum-fluorescent display (VFD) with 2x20 characters. Display is controllable through RS-232-like interface with 9600/8-N-1 configuration, and uses it's proprietary protocol.
 ---

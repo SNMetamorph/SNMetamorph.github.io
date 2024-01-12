@@ -24,15 +24,22 @@ Implements as much as possible functions that display supports, such as dimming,
 [GitHub page](https://github.com/SNMetamorph/FutabaVfdM202MD10C)  
 [Arduino Reference](https://www.arduino.cc/reference/en/libraries/futabavfdm202md10c/)  
 
+# SMD Splitter
+Utility for automatic preprocessing SMD-files in order to bypass GoldSrc internal limit. Program saves a lot of time for the 3D-artists. 
+This program was made to commercial order.
+  
+[Gamebanana page](https://gamebanana.com/tools/15803)  
+[Dev-CS page](https://dev-cs.ru/resources/1677/)  
+
+# mdl-flip
+Fast, standalone and self-contained (doesn't require Visual Basic/VC++) tool for flipping/mirroring GoldSrc/Xash3D models. 
+Created as modern replacement for gFlip utility. This program was made to commercial order.
+  
+[Gamebanana page](https://gamebanana.com/tools/7299)  
+[Dev-CS page](https://dev-cs.ru/resources/1357/)  
+
 # mem2pix
 Crossplatform utility for real-time visualization process memory content as image. Based on SDL2, works on Windows and Linux. 
 Supports many pixel formats, works even on Windows XP. 
   
 [GitHub page](https://github.com/SNMetamorph/mem2pix)  
-
-# mdl-flip
-Fast, standalone and self-contained (doesn't require Visual Basic/VC++) and functional tool for flipping/mirroring GoldSrc/Xash3D models. 
-Created as modern replacement for gFlip utility.
-  
-[Gamebanana page](https://gamebanana.com/tools/7299)  
-[Dev-CS page](https://dev-cs.ru/resources/1357/)  

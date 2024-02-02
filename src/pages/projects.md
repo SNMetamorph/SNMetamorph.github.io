@@ -3,7 +3,7 @@ title: Projects
 ---
 
 # PrimeXT
-Modern SDK for the Xash3D FWGS engine, to work on modern platforms with cross-platform support and improved graphics/physics, while retaining all the features and approaches to work inherent in GoldSrc and Xash3D. Based on XashXT, and therefore has all the functionality inherent in XashXT and Spirit Of Half-Life. Suitable for creating both singleplayer and multiplayer mods. Development started in August 2021.  
+Modern Half-Life 1 SDK for Xash3D FWGS engine, with cross-platform support, improved graphics/physics, and a lot of new features for mod-makers, while retaining all the approaches to work inherent from GoldSrc and Xash3D. Also all the functionality from XashXT and Spirit Of Half-Life was inherited too. Suitable for creating both singleplayer and multiplayer mods. Development was started in August 2021.  
   
 [GitHub page](https://github.com/SNMetamorph/PrimeXT)  
 [ModDB page](https://www.moddb.com/mods/primext)  

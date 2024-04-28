@@ -10,12 +10,17 @@ Modern Half-Life 1 SDK for Xash3D FWGS engine, with cross-platform support, impr
 [Documentation page](https://snmetamorph.github.io/PrimeXT/)  
 
 # GoldSrc Monitor
-Simple and standalone utility for mapping/scripting/speedrunning or researching 
-games based on GoldSrc/Xash3D FWGS engine (such as CS 1.6, HL, HL:OF, HL:BS, and other HL-mods). Uses RapidJSON and PolyHook 2.  
+Simple and standalone utility with bunch of functions for mapping/scripting/speedrunning or researching 
+games based on GoldSrc/Xash3D FWGS engine (such as CS 1.6, HL, HL:OF, HL:BS, and other HL-mods).  
   
 [GitHub page](https://github.com/SNMetamorph/goldsrc-monitor)  
 [Gamebanana page](https://gamebanana.com/mods/39429)  
 [Dev-CS page](https://dev-cs.ru/resources/1035/)  
+
+# XashMS
+Asynchronous, cross-platform master server implementation for Xash3D FWGS engine. Based on libevent, written in C++17, supports IPv6 protocol (as optional feature). 
+
+[GitHub page](https://github.com/SNMetamorph/XashMS)  
 
 # FutabaVfdM202MD10C
 Library for Arduino framework for convenient working with vacuum fluorescent displays (VFD) based on Futaba M202MD10C board.

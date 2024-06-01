@@ -99,6 +99,9 @@ const config = {
         theme: lightCodeTheme,
         darkTheme: darkCodeTheme,
       },
+      colorMode: {
+        respectPrefersColorScheme: true,
+      },
       zoom: {
         selector: '.markdown :not(em) > img',
         config: {

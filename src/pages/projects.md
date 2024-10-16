@@ -11,14 +11,14 @@ Modern Half-Life 1 SDK for Xash3D FWGS engine, with cross-platform support, impr
 
 # GoldSrc Monitor
 Simple and standalone utility with bunch of functions for mapping/scripting/speedrunning or researching 
-games based on GoldSrc/Xash3D FWGS engine (such as CS 1.6, HL, HL:OF, HL:BS, and other HL-mods).  
+games based on GoldSrc/Xash3D FWGS engine (such as Half-Life 1, CS 1.6, and other HL-mods).  
   
 [GitHub page](https://github.com/SNMetamorph/goldsrc-monitor)  
 [Gamebanana page](https://gamebanana.com/mods/39429)  
 [Dev-CS page](https://dev-cs.ru/resources/1035/)  
 
 # XashMS
-Asynchronous, cross-platform master server implementation for Xash3D FWGS engine. Based on libevent, written in C++17, supports IPv6 protocol (as optional feature). 
+Asynchronous, cross-platform master server implementation for Xash3D FWGS engine. Based on libevent, written in C++17, supports IPv6 protocol, adapted to operating inside Docker container. 
 
 [GitHub page](https://github.com/SNMetamorph/XashMS)  
 

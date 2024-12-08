@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunksnmetamorph_blog=self.webpackChunksnmetamorph_blog||[]).push([[4174],{1920:s=>{s.exports=JSON.parse('{"label":"arduino","permalink":"/posts/tags/arduino","allTagsPath":"/posts/tags","count":1}')}}]);

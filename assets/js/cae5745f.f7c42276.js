@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunksnmetamorph_blog=self.webpackChunksnmetamorph_blog||[]).push([[3705],{1446:s=>{s.exports=JSON.parse('{"label":"termux","permalink":"/posts/tags/termux","allTagsPath":"/posts/tags","count":1}')}}]);

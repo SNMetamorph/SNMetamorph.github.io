@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunksnmetamorph_blog=self.webpackChunksnmetamorph_blog||[]).push([[8326],{2963:s=>{s.exports=JSON.parse('{"permalink":"/posts/tags/p-2-st","page":1,"postsPerPage":10,"totalPages":1,"totalCount":1,"blogDescription":"Blog","blogTitle":"Blog"}')}}]);

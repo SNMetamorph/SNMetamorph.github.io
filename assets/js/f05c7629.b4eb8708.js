@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunksnmetamorph_blog=self.webpackChunksnmetamorph_blog||[]).push([[4823],{6740:s=>{s.exports=JSON.parse('{"label":"p2st","permalink":"/posts/tags/p-2-st","allTagsPath":"/posts/tags","count":1}')}}]);

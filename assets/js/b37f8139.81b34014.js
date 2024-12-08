@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunksnmetamorph_blog=self.webpackChunksnmetamorph_blog||[]).push([[597],{8110:s=>{s.exports=JSON.parse('{"label":"half-life","permalink":"/posts/tags/half-life","allTagsPath":"/posts/tags","count":1}')}}]);

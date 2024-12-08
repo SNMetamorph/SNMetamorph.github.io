@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunksnmetamorph_blog=self.webpackChunksnmetamorph_blog||[]).push([[1096],{6173:s=>{s.exports=JSON.parse('{"label":"crossplatform","permalink":"/posts/tags/crossplatform","allTagsPath":"/posts/tags","count":1}')}}]);

@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunksnmetamorph_blog=self.webpackChunksnmetamorph_blog||[]).push([[96],{6909:s=>{s.exports=JSON.parse('{"label":"electronics","permalink":"/posts/tags/electronics","allTagsPath":"/posts/tags","count":1}')}}]);

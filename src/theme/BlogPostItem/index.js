@@ -1,6 +1,6 @@
-import React from "react";
+import React from 'react';
 import BlogPostItem from '@theme-original/BlogPostItem';
-import { useBlogPost } from "@docusaurus/theme-common/internal";
+import { useBlogPost } from '@docusaurus/plugin-content-blog/client';
 import UtterancesComments from "../../components/UtterancesComments";
 
 export default function BlogPostItemWrapper(props) {
@@ -9,7 +9,7 @@ export default function BlogPostItemWrapper(props) {
   return (
     <>
       <BlogPostItem {...props} />
-      {metadata && comments && <UtterancesComments className="blog-post-comments" />}
+      { metadata && comments && <UtterancesComments className="blog-post-comments"/> }
     </>
   );
 }

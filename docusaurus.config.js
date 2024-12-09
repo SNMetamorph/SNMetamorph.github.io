@@ -17,7 +17,12 @@ const config = {
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
   plugins: [
-    require.resolve("docusaurus-plugin-image-zoom")
+    [
+      '@docusaurus/plugin-ideal-image',
+      {
+        disableInDev: false,
+      },
+    ],
   ],
   themes: [
     [

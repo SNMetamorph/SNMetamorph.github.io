@@ -7,6 +7,8 @@ how cool it would be to be able to compile maps on some platform other than the 
 Then I remembered that I have an Android TV box at home that, in theory, could be used for this purpose."
 ---
 
+import Image from '@theme/IdealImage';
+
 I have been modding the legendary Half-Life 1 for these years, and somehow quite spontaneously I thought: 
 how cool it would be to be able to compile maps on some platform other than the usual x86 and amd64... 
 Then I remembered that I have an Android TV box at home that, in theory, could be used for this purpose. 
@@ -18,7 +20,7 @@ It has 16 gigabytes of internal memory, 2 gigabytes of RAM. Based on the Allwinn
 From interfaces: has two USB 2.0 ports, composite video output, HDMI port. 
 Network access can be provided both via Wi-Fi and via an Ethernet port (I used a wired connection).
 
-| ![](./img/neofetch.jpg) | 
+| <Image img={require('./img/neofetch.jpg')} /> | 
 |:--:| 
 | *Main information about TV-box system, shown by neofetch* |
 
@@ -59,8 +61,8 @@ After that, you can try to connect from the computer to the server. Please note 
 SSH server, not the usual 22. You can enter any username, but you need to enter the password 
 specified earlier. If the connection is successful, a shell will be displayed.
 
-![KiTTY Interface](./img/kitty-shell-1.png)
-![KiTTY Shell after logging in](./img/kitty-shell-2.png)
+<Image img={require('./img/kitty-shell-1.png')} alt='KiTTY Interface' />
+<Image img={require('./img/kitty-shell-2.png')} alt='KiTTY Shell after logging in' />
 
 ## Building map compilers
 After completing all the preparatory procedures, you can go directly to the build procedure: the first step is to clone the sources into your home directory.
@@ -89,19 +91,19 @@ cmake .. --preset utils-termux-debug
 cmake --build . --parallel 4
 ```
 
-| ![](./img/cmake-cache-generated.png) | 
+| <Image img={require('./img/cmake-cache-generated.png')} /> | 
 |:--:| 
 | *CMake cache was successfully generated* |
 
 After executing the two commands described above, the build process will start.
-![](./img/build-process-1.png)
+<Image img={require('./img/build-process-1.png')} />
 
 If the build succeeds, it will look like this. If any errors occur, it is better to restart the assembly 
 in one thread, so it will be easier to find out exactly where the compilation error occurred. By the way, 
 on this set-top box, the assembly into 4 streams took about four minutes, taking into account the 
 fact that an IPTV player was running in the background.
 
-| ![](./img/build-process-finished.png) | 
+| <Image img={require('./img/build-process-finished.png')} /> | 
 |:--:| 
 | *Map compilers build successfully finished* |
 
@@ -137,7 +139,7 @@ The map compilation process consists of four steps. At the end of each stage, th
 If there are any problems during the compilation of the map, you can look at the log file in the maps subdirectory. 
 Also, you can add the -dev 5 startup option to compilers to display the process in more detail.
 
-| ![](./img/map-compiled.png) | 
+| <Image img={require('./img/map-compiled.png')} /> | 
 |:--:| 
 | *Last map compiling stage was finished* |
 
@@ -146,7 +148,7 @@ After the map successfully compiled on the TV-box, I decided to rebuild the same
 and then compare these two maps. Ideally, there should be no visible differences. I will test this whole thing 
 in the PrimeXT mod, which is based on the Xash3D FWGS engine.
 
-| ![](./img/maps-list.png) | 
+| <Image img={require('./img/maps-list.png')} /> | 
 |:--:| 
 | *Maps build on different architecture and platform* |
 
@@ -220,16 +222,16 @@ these differences, but most likely they are completely uncritical.
 Next, it makes sense to compare if there are any visual differences on the map itself.
 
 ## Screenshots of map compiled on my PC
-![](./img/ground-truth-1.png)
-![](./img/ground-truth-2.png)
-![](./img/ground-truth-3.png)
-![](./img/ground-truth-4.png)
+<Image img={require('./img/ground-truth-1.png')} />
+<Image img={require('./img/ground-truth-2.png')} />
+<Image img={require('./img/ground-truth-3.png')} />
+<Image img={require('./img/ground-truth-4.png')} />
 
 ## Screenshots of map compiled on TV-box
-![](./img/tvbox-map-1.png)
-![](./img/tvbox-map-2.png)
-![](./img/tvbox-map-3.png)
-![](./img/tvbox-map-4.png)
+<Image img={require('./img/tvbox-map-1.png')} />
+<Image img={require('./img/tvbox-map-2.png')} />
+<Image img={require('./img/tvbox-map-3.png')} />
+<Image img={require('./img/tvbox-map-4.png')} />
 
 Personally, I didn’t notice any visual differences in lighting or geometry at all, which of course is good. 
 The experiment can be considered successful.

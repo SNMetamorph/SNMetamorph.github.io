@@ -5,6 +5,8 @@ tags: [vfd, arduino, electronics, 00dn901, m202md10c, 41d0160, customer display]
 description: Investigating about how works Toshiba 00DN901 vacuum-fluorescent display (VFD) with 2x20 characters. Display is controllable through RS-232-like interface with 9600/8-N-1 configuration, and uses it's proprietary protocol.
 ---
 
+import Image from '@theme/IdealImage';
+
 ## Introduction
 Recently I found such an interesting and kind of vintage piece of hardware at local store - vacuum-fluorescent display (VFD) with 2x20 characters. So I decided to buy two of them for future investigations since they're relatively cheap.
 
@@ -14,17 +16,17 @@ Originally, display distributed with pole and cable. I got rid of pole since I d
 Note that althrough DB9 connector is used, display is not compatible with common serial port, don't try to plug it in PC, it won't work and can even damage your port.
 :::
 
-| ![](./img/connector.jpg) | 
+| <Image img={require('./img/connector.jpg')} /> | 
 |:--:| 
 | *Proprietary connector on display cable* |
 
 This is how display without pole looks like:
 
-![](./img/front.jpg)
-![](./img/down.jpg)
-![](./img/back.jpg)
-![](./img/up.jpg)
-![](./img/side.jpg)
+<Image img={require('./img/front.jpg')} />
+<Image img={require('./img/down.jpg')} />
+<Image img={require('./img/back.jpg')} />
+<Image img={require('./img/up.jpg')} />
+<Image img={require('./img/side.jpg')} />
 
 ## Dismantling the display
 Let's try to detach front panel: that can be done with bare hands, you just need to pull front panel both down and away from the display. 
@@ -34,17 +36,17 @@ Front panel has dimming filter in it, and it is not glued or welded and can be e
 
 This is how front panel looks like on the back side:
 
-![](./img/front_panel.jpg)
+<Image img={require('./img/front_panel.jpg')} />
 
 Next, you need to remove three screws on both sides:
 
-![](./img/vial.jpg)
+<Image img={require('./img/vial.jpg')} />
 
-| ![](./img/case_backside.jpg) | 
+| <Image img={require('./img/case_backside.jpg')} /> | 
 |:--:| 
 | *Display case without PCB, it has a lot of free space, even when PCB attached* |
 
-| ![](./img/pcb1.jpg) | 
+| <Image img={require('./img/pcb1.jpg')} /> | 
 |:--:| 
 | *PCB extracted from display case* |
 
@@ -54,7 +56,7 @@ UART with 9600-8N1 configuration (but also with inverted logic levels). So I'll 
 ## Determining pinout
 But let's assume that we're at time point when all of needed information is not available yet. Next step we should do is determine display pinout. Probably, since display has only four pins, it shouldn't be that hard. I easily found GND pin and two VCC pins (that is so strange that we have 2 pins for VCC, but only 1 for ground). Therefore, last remaining pin is used for transfer data from microcontroller to display. As a result, we got this table:
 
-![](./img/pinout.jpg)
+<Image img={require('./img/pinout.jpg')} />
 
 | Pin number | Description |
 |------------|-------------|
@@ -90,7 +92,7 @@ void loop() {
 
 And it worked without any problems!
 
-![](./img/final.jpg)
+<Image img={require('./img/final.jpg')} />
 
 ## Conclusion
 This post in theory can be much longer, I didn't covered determining other functions of display protocol, such as controlling cursor position, dimming, etc. But there is nothing interesting it in, really. It's just sending random bytes to serial stream and see what happened. For narrow down the number of possible bytes combinations I checked datasheets for similar displays from Futaba corporation. Also, some russian guy with nickname `abomin` helps me with code pages and custom character defining feature a lot. And one by one, I determined all things that this display can do. 
@@ -99,4 +101,4 @@ And result of all this investigations was [library for working with Futaba M202M
 
 After some time I got an idea to make thing like meteostation, but based on this display. It shows current air temperature, relative humidity, atmospheric pressure and carbon dioxide concentration on display, and also sends all of that information to Home Assistant through MQTT. That thing based on ESP8266 microcontroller, and sensors BME280 and MH-Z14A used too. Energy consumption of this device is around 6 Watts, a most of this bugdet used by display. This is how this device looks:
 
-![](./img/device.jpg)
+<Image img={require('./img/device.jpg')} />

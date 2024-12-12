@@ -70,7 +70,7 @@ We got pinout scheme and obviously next step will be applying voltage to display
 ## Connecting display to MCU
 And it's time to bring other hardware to this journey - I'll use Arduino Uno and try to send some information to display and check what will happen. For this we need pretty simple code snippet:
 
-```c++
+```cpp
 #include <Arduino.h>
 #include <SoftwareSerial.h>
 

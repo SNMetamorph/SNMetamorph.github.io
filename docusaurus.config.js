@@ -1,9 +1,7 @@
 // @ts-check
 // Note: type annotations allow type checking and IDEs autocompletion
 
-const {themes} = require('prism-react-renderer');
-const lightTheme = themes.github;
-const darkTheme = themes.dracula;
+import {themes as prismThemes} from 'prism-react-renderer';
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
@@ -106,8 +104,8 @@ const config = {
         copyright: `Copyright © ${new Date().getFullYear()} SNMetamorph. Built with Docusaurus.`,
       },
       prism: {
-        theme: lightTheme,
-        darkTheme: darkTheme,
+        theme: prismThemes.github,
+        darkTheme: prismThemes.oneDark,
       },
       colorMode: {
         respectPrefersColorScheme: true,

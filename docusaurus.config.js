@@ -95,9 +95,13 @@ const config = {
             href: 'https://github.com/SNMetamorph',
           },
           {
+            label: 'RSS Feed',
+            href: 'https://snmetamorph.github.io/posts/rss.xml',
+          },
+          {
             label: 'YouTube',
             href: 'https://www.youtube.com/@snmetamorph_yt',
-          },
+          }
         ],
         copyright: `Copyright © ${new Date().getFullYear()} SNMetamorph. Built with Docusaurus.`,
       },

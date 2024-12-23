@@ -112,6 +112,7 @@ In some cases, incompatibility caused by difference in console variables. Someti
 <li>Implemented PHS/PAS generating, this helped to fix <a href="https://github.com/FWGS/xash3d-fwgs/issues/619" target="_blank" rel="noopener noreferrer">issue #619</a></li>
 <li>Added <code>room_off</code> console variable, after this Sven Co-op 4.8 client started working with Xash3D FWGS</li>
 <li>Added <code>gl_overbright</code> from early GoldSrc versions, also some changes with gamma were made for better matching with GoldSrc looking</li>
+<li>Added <code>gl_fog</code> console variable for toggling OpenGL built-in fog implementation. Some of GoldSrc servers anticheats were checking this value</li>
 <li>Added <code>fps_override</code> console variable for overriding framerate soft limit</li>
 <li>Reverted ancient GoldSrc shadows, this feature was reintroduced to GoldSrc at HL25 anniversary update, could
 be enabled with <code>r_shadows</code> console variable</li>
@@ -119,7 +120,7 @@ be enabled with <code>r_shadows</code> console variable</li>
 </ul>
 <h2 class="anchor anchorWithStickyNavbar_LWe7" id="complete-ipv6-support-in-multiplayer">Complete IPv6 support in multiplayer<a href="https://snmetamorph.github.io/posts/xash3d-fwgs-dec-2024#complete-ipv6-support-in-multiplayer" class="hash-link" aria-label="Direct link to Complete IPv6 support in multiplayer" title="Direct link to Complete IPv6 support in multiplayer">​</a></h2>
 <h5 class="anchor anchorWithStickyNavbar_LWe7" id="by-flying-with-gauss-2">by <a href="https://github.com/FWGS" target="_blank" rel="noopener noreferrer"><strong>Flying With Gauss</strong></a><a href="https://snmetamorph.github.io/posts/xash3d-fwgs-dec-2024#by-flying-with-gauss-2" class="hash-link" aria-label="Direct link to by-flying-with-gauss-2" title="Direct link to by-flying-with-gauss-2">​</a></h5>
-<p>At this day, engine and masterserver both supports IPv6. And we have some masterservers running on the Internet through IPv6.
+<p>As of today, engine and masterserver both supports IPv6. And we have some masterservers running on the Internet through IPv6.
 This means anybody could setup their Xash3D FWGS server on the Internet with IPv6 and it will shown for other clients who also have IPv6 address.
 Also, it's well tested and we didn't discovered any issues with it.</p>
 <p>If you for some reason need to run dedicated server exclusively on IPv6, you can use <code>-noip</code> startup parameter, which completely disables IPv4 networking.</p>
@@ -143,11 +144,11 @@ now it's back here again. You can read more detailed description in <a href="htt
 <h2 class="anchor anchorWithStickyNavbar_LWe7" id="other-minor-changes">Other minor changes<a href="https://snmetamorph.github.io/posts/xash3d-fwgs-dec-2024#other-minor-changes" class="hash-link" aria-label="Direct link to Other minor changes" title="Direct link to Other minor changes">​</a></h2>
 <h5 class="anchor anchorWithStickyNavbar_LWe7" id="by-flying-with-gauss-3">by <a href="https://github.com/FWGS" target="_blank" rel="noopener noreferrer"><strong>Flying With Gauss</strong></a><a href="https://snmetamorph.github.io/posts/xash3d-fwgs-dec-2024#by-flying-with-gauss-3" class="hash-link" aria-label="Direct link to by-flying-with-gauss-3" title="Direct link to by-flying-with-gauss-3">​</a></h5>
 <ul>
-<li>Added SIGTERM signal handling for XashDS: this needed for graceful shutdown of dedicated server inside Docker container</li>
-<li>Enabled engine binaries signing for Windows platform, helped a lot with false-positive antiviruses detections</li>
+<li>Added SIGTERM signal handling for XashDS, needed for graceful shutdown of dedicated server inside Docker container</li>
+<li>Enabled engine binaries signing for Windows platform, this helped a lot with false-positive antiviruses detections</li>
 <li>Added console variable <code>cl_logomaxdim</code> for setting maximal dimension for player sprays, default is 96 units</li>
 <li>Added more information to logs: engine build number, VCS branch name &amp; commit hash, platform and architecture name, game startup parameters</li>
-<li>FastDL improvements: support for chunked transfer encoding and compression with gzip</li>
+<li>FastDL improvements: support for chunked transfer encoding and gzip compression</li>
 <li>Android port improvements: some platform-specific bugs were fixed</li>
 <li>Reduced connection time to the servers: for now, you can connect to server in less of 5 seconds (except time spent on content downloading, if it was required)</li>
 </ul>]]></content:encoded>

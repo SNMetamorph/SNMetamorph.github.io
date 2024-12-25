@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://snmetamorph.github.io/posts</id>
     <title>SNMetamorph's Blog Blog</title>
-    <updated>2024-12-15T00:00:00.000Z</updated>
+    <updated>2024-12-25T00:00:00.000Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://snmetamorph.github.io/posts"/>
     <subtitle>SNMetamorph's Blog Blog</subtitle>
@@ -11,7 +11,7 @@
         <title type="html"><![CDATA[Xash3D FWGS Status Update - December 2024]]></title>
         <id>https://snmetamorph.github.io/posts/xash3d-fwgs-dec-2024</id>
         <link href="https://snmetamorph.github.io/posts/xash3d-fwgs-dec-2024"/>
-        <updated>2024-12-15T00:00:00.000Z</updated>
+        <updated>2024-12-25T00:00:00.000Z</updated>
         <summary type="html"><![CDATA[Detailed overview of changes that were made during development of Xash3D FWGS engine in 2024 year.]]></summary>
         <content type="html"><![CDATA[<p>This is a detailed overview of the changes that were made during the development of Xash3D FWGS engine in the year 2024. I would also recommend checking out the previous development overviews that were
 made for <a href="https://velaron.github.io/xash3d-fwgs-november-2022.html" target="_blank" rel="noopener noreferrer">2022</a> and <a href="https://velaron.github.io/xash3d-fwgs-november-2023.html" target="_blank" rel="noopener noreferrer">2023</a> years.</p>

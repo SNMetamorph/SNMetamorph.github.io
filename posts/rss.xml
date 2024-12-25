@@ -4,7 +4,7 @@
         <title>SNMetamorph's Blog Blog</title>
         <link>https://snmetamorph.github.io/posts</link>
         <description>SNMetamorph's Blog Blog</description>
-        <lastBuildDate>Sun, 15 Dec 2024 00:00:00 GMT</lastBuildDate>
+        <lastBuildDate>Wed, 25 Dec 2024 00:00:00 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
@@ -12,7 +12,7 @@
             <title><![CDATA[Xash3D FWGS Status Update - December 2024]]></title>
             <link>https://snmetamorph.github.io/posts/xash3d-fwgs-dec-2024</link>
             <guid>https://snmetamorph.github.io/posts/xash3d-fwgs-dec-2024</guid>
-            <pubDate>Sun, 15 Dec 2024 00:00:00 GMT</pubDate>
+            <pubDate>Wed, 25 Dec 2024 00:00:00 GMT</pubDate>
             <description><![CDATA[Detailed overview of changes that were made during development of Xash3D FWGS engine in 2024 year.]]></description>
             <content:encoded><![CDATA[<p>This is a detailed overview of the changes that were made during the development of Xash3D FWGS engine in the year 2024. I would also recommend checking out the previous development overviews that were
 made for <a href="https://velaron.github.io/xash3d-fwgs-november-2022.html" target="_blank" rel="noopener noreferrer">2022</a> and <a href="https://velaron.github.io/xash3d-fwgs-november-2023.html" target="_blank" rel="noopener noreferrer">2023</a> years.</p>

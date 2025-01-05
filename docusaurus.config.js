@@ -97,6 +97,10 @@ const config = {
             href: 'https://snmetamorph.github.io/posts/rss.xml',
           },
           {
+            label: 'Mastodon.Gamedev',
+            href: 'https://mastodon.gamedev.place/@SNMetamorph',
+          },
+          {
             label: 'YouTube',
             href: 'https://www.youtube.com/@snmetamorph_yt',
           }
@@ -121,7 +125,8 @@ const config = {
         }
       },
       metadata: [
-        { name: 'keywords', content: 'hlsdk, gamedev, programming, open source, half-life, xash3d, fwgs, goldsrc, primext, mdl-flip, goldsrc-monitor, opengl, modding, snmetamorph, c++' }
+        { name: 'keywords', content: 'hlsdk, gamedev, programming, open source, half-life, xash3d, fwgs, goldsrc, primext, mdl-flip, goldsrc-monitor, opengl, modding, snmetamorph, c++' },
+        { name: 'fediverse:creator', content: '@SNMetamorph@mastodon.gamedev.place' }
       ]
     }),
 };

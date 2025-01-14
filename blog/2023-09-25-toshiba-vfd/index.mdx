@@ -1,6 +1,7 @@
 ---
 slug: vfd-toshiba-00dn901
 title: Breaking down Toshiba 00DN901 customer display
+image: ./img/device.jpg
 tags: [vfd, arduino, electronics, 00dn901, m202md10c, 41d0160, customer display]
 description: Investigating about how works Toshiba 00DN901 vacuum-fluorescent display (VFD) with 2x20 characters. Display is controllable through RS-232-like interface with 9600/8-N-1 configuration, and uses it's proprietary protocol.
 ---
@@ -8,9 +9,9 @@ description: Investigating about how works Toshiba 00DN901 vacuum-fluorescent di
 import Image from '@theme/IdealImage';
 
 ## Introduction
-Recently I found such an interesting and kind of vintage piece of hardware at local store - vacuum-fluorescent display (VFD) with 2x20 characters. So I decided to buy two of them for future investigations since they're relatively cheap.
+Recently I found such an interesting piece of hardware at local store - vacuum-fluorescent display (VFD) with 2x20 characters. So I decided to buy two of them for future investigations since they're relatively cheap.
 
-Originally, display distributed with pole and cable. I got rid of pole since I don't need it, anyway you can find how it looks without any problems. About cable: it has familiar DB9 male connector on one side, but on other side there is some strange connector that vaguely looks like 8P8C, but I've never seen it before anywhere. 
+Originally, display distributed with pole and cable. I got rid of pole since I don't need it, anyway you can find how it looks without any problems. Cable has familiar DB9 male connector on one side, but on other side there is some strange connector that vaguely looks like 8P8C, and I've never seen it before anywhere. 
 
 :::warning
 Note that althrough DB9 connector is used, display is not compatible with common serial port, don't try to plug it in PC, it won't work and can even damage your port.
@@ -50,25 +51,24 @@ Next, you need to remove three screws on both sides:
 |:--:| 
 | *PCB extracted from display case* |
 
-First thing we see, is that display based on Futaba M202MD10C board. From this information I found out that display more likely uses
-UART with 9600-8N1 configuration (but also with inverted logic levels). So I'll test it in future steps. Also it's worth to notice that if you'll try to gather information about this board, you'll find much more than it was when I was doing all this research (reason will be described in the end of this post).
+First thing we see, is that display based on Futaba M202MD10C board. From this information I found out that display more likely uses UART with 9600-8N1 configuration (but also with inverted logic levels). I will test it in future steps.
 
 ## Determining pinout
-But let's assume that we're at time point when all of needed information is not available yet. Next step we should do is determine display pinout. Probably, since display has only four pins, it shouldn't be that hard. I easily found GND pin and two VCC pins (that is so strange that we have 2 pins for VCC, but only 1 for ground). Therefore, last remaining pin is used for transfer data from microcontroller to display. As a result, we got this table:
+But let's assume that we're at time point when all of needed information is not available yet. Next step we should do is determine display pinout. Probably, since display has only four pins, it shouldn't be that hard. I easily found GND pin and two VCC pins. Therefore, last remaining pin is used for transfer data from microcontroller to display. As a result, we got such scheme:
+
+| Pin number (left to right) | Description |
+|----------------------------|-------------|
+| 1                          | GND         |
+| 2                          | DATA        |
+| 3                          | VCC         |
+| 4                          | VCC         |
 
 <Image img={require('./img/pinout.jpg')} />
-
-| Pin number | Description |
-|------------|-------------|
-| 1          | GND         |
-| 2          | DATA        |
-| 3          | VCC         |
-| 4          | VCC         |
 
 We got pinout scheme and obviously next step will be applying voltage to display. But what exact voltage we should use? I guess that 5 Volts will not enough. Then I'll try 9 and 12 Volts. As it turned out later, 9 Volts also not enough. But with 12 Volts it worked - display showed underscore at first row. 
 
 ## Connecting display to MCU
-And it's time to bring other hardware to this journey - I'll use Arduino Uno and try to send some information to display and check what will happen. For this we need pretty simple code snippet:
+It is time to bring other hardware to this journey - I will use Arduino Uno and try to send some information to display and check what will happen. For this we need pretty simple code snippet:
 
 ```cpp
 #include <Arduino.h>
@@ -97,8 +97,8 @@ And it worked without any problems!
 ## Conclusion
 This post in theory can be much longer, I didn't covered determining other functions of display protocol, such as controlling cursor position, dimming, etc. But there is nothing interesting it in, really. It's just sending random bytes to serial stream and see what happened. For narrow down the number of possible bytes combinations I checked datasheets for similar displays from Futaba corporation. Also, some russian guy with nickname `abomin` helps me with code pages and custom character defining feature a lot. And one by one, I determined all things that this display can do. 
 
-And result of all this investigations was [library for working with Futaba M202MD10C board on Arduino framework](https://www.arduinolibraries.info/libraries/futaba-vfd-m202-md10-c). This library exposes in it's API all possible functionality of displays based on this board. Library is well documented and contains bunch of code examples that covers different library functions. Therefore, there is no problems at all to create your own library that works with this display, in case if you want to use display with STM microcontrollers or just don't want to depends on any kind of frameworks. 
+And result of all this investigations was [library for working with Futaba M202MD10C board on Arduino framework](https://www.arduinolibraries.info/libraries/futaba-vfd-m202-md10-c). This library exposes in it's API all possible functionality of displays based on this board. Library is well documented and contains bunch of code examples that covers different library functions. Therefore, this shouldn't be a problem to create your own library that works with this display, in case if you want to use display with something else rather than Arduino or just don't want to depends on any kind of frameworks. 
 
-After some time I got an idea to make thing like meteostation, but based on this display. It shows current air temperature, relative humidity, atmospheric pressure and carbon dioxide concentration on display, and also sends all of that information to Home Assistant through MQTT. That thing based on ESP8266 microcontroller, and sensors BME280 and MH-Z14A used too. Energy consumption of this device is around 6 Watts, a most of this bugdet used by display. This is how this device looks:
+After some time I got an idea to make thing like meteostation based on this display. It shows current air temperature, relative humidity, atmospheric pressure & carbon dioxide concentration on display, and periodically sends all of that information to Home Assistant through MQTT. This device based on ESP8266 microcontroller, sensors BME280 and MH-Z14A used inside it. Energy consumption of this device is around 6 Watts, a most of this bugdet used by VFD. This is how this device looks:
 
 <Image img={require('./img/device.jpg')} />

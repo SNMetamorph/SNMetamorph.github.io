@@ -3,7 +3,14 @@ import Link from '@docusaurus/Link';
 import useBaseUrl from '@docusaurus/useBaseUrl';
 import IconExternalLink from '@theme/Icon/ExternalLink';
 import styles from './styles.module.css';
-import { DevtoIcon, GithubIcon, YoutubeIcon, RssIcon, MastodonIcon } from '../../../icons';
+import { 
+  DevtoIcon, 
+  GithubIcon, 
+  YoutubeIcon, 
+  RssFeedIcon, 
+  AtomFeedIcon, 
+  MastodonIcon 
+} from '../../../icons';
 
 function SuitableSocialIcon(props) {
   const {url, ...other} = props;
@@ -16,7 +23,9 @@ function SuitableSocialIcon(props) {
   else if (url.startsWith('https://mastodon'))
     return (<MastodonIcon {...other} />);
   else if (url.endsWith('rss.xml'))
-    return (<RssIcon {...other} />);
+    return (<RssFeedIcon {...other} />);
+  else if (url.endsWith('atom.xml'))
+    return (<AtomFeedIcon {...other} />);
   else
     return (<IconExternalLink/>);
 }

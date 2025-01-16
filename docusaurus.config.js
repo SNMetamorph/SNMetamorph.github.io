@@ -97,6 +97,10 @@ const config = {
             href: 'https://snmetamorph.github.io/posts/rss.xml',
           },
           {
+            label: 'Atom Feed',
+            href: 'https://snmetamorph.github.io/posts/atom.xml',
+          },
+          {
             label: 'Mastodon.Gamedev',
             href: 'https://mastodon.gamedev.place/@SNMetamorph',
           },

@@ -5,7 +5,8 @@ import {
   mdiYoutube,
   mdiDevTo,
   mdiRssBox,
-  mdiMastodon
+  mdiMastodon,
+  mdiAtom
 } from '@mdi/js';
 
 export function GithubIcon(props) {
@@ -29,7 +30,7 @@ export function DevtoIcon(props) {
   );
 }
 
-export function RssIcon(props) {
+export function RssFeedIcon(props) {
   const {...other} = props;
   return (
     <Icon path={mdiRssBox} {...other}/>
@@ -40,5 +41,12 @@ export function MastodonIcon(props) {
   const {...other} = props;
   return (
     <Icon path={mdiMastodon} {...other}/>
+  );
+}
+
+export function AtomFeedIcon(props) {
+  const {...other} = props;
+  return (
+    <Icon path={mdiAtom} {...other}/>
   );
 }

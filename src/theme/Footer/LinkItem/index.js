@@ -3,14 +3,12 @@ import Link from '@docusaurus/Link';
 import useBaseUrl from '@docusaurus/useBaseUrl';
 import IconExternalLink from '@theme/Icon/ExternalLink';
 import styles from './styles.module.css';
-import { DevtoIcon, GithubIcon, TelegramIcon, YoutubeIcon, RssIcon, MastodonIcon } from '../../../icons';
+import { DevtoIcon, GithubIcon, YoutubeIcon, RssIcon, MastodonIcon } from '../../../icons';
 
 function SuitableSocialIcon(props) {
   const {url, ...other} = props;
   if (url.startsWith('https://github.com'))
     return (<GithubIcon {...other} />);
-  else if (url.startsWith('https://t.me'))
-    return (<TelegramIcon {...other} />);
   else if (url.startsWith('https://www.youtube.com'))
     return (<YoutubeIcon {...other} />);
   else if (url.startsWith('https://dev.to'))

@@ -80,6 +80,7 @@ const config = {
           { to: '/posts', label: 'Posts', position: 'right' },
           { to: '/projects', label: 'Projects', position: 'right' },
           { to: '/contributions', label: 'Contributions', position: 'right' },
+          { to: '/donate', label: 'Donate', position: 'right' },
         ],
       },
       footer: {

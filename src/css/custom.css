@@ -9,13 +9,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
 
 :root {
-  --ifm-color-primary: #2f7517;
-  --ifm-color-primary-dark: #2a6915;
-  --ifm-color-primary-darker: #286314;
-  --ifm-color-primary-darkest: #215210;
-  --ifm-color-primary-light: #348119;
-  --ifm-color-primary-lighter: #17390b;
-  --ifm-color-primary-lightest: #193e0c;
+  --ifm-color-primary: #b51115;
+  --ifm-color-primary-dark: #a30f13;
+  --ifm-color-primary-darker: #9a0e12;
+  --ifm-color-primary-darkest: #7f0c0f;
+  --ifm-color-primary-light: #c71317;
+  --ifm-color-primary-lighter: #d01418;
+  --ifm-color-primary-lightest: #e9181d;
   --ifm-code-font-size: 95%;
   --ifm-font-family-base: 'Open Sans', system-ui, -apple-system;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);

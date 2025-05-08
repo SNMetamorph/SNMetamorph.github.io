@@ -86,10 +86,6 @@ const config = {
       footer: {
         links: [
           {
-            label: 'Dev.to',
-            href: 'https://dev.to/snmetamorph',
-          },
-          {
             label: 'GitHub',
             href: 'https://github.com/SNMetamorph',
           },
@@ -100,10 +96,6 @@ const config = {
           {
             label: 'Atom Feed',
             href: 'https://snmetamorph.github.io/posts/atom.xml',
-          },
-          {
-            label: 'Mastodon.Gamedev',
-            href: 'https://mastodon.gamedev.place/@SNMetamorph',
           },
           {
             label: 'YouTube',

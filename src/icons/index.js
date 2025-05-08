@@ -6,7 +6,8 @@ import {
   mdiDevTo,
   mdiRssBox,
   mdiMastodon,
-  mdiAtom
+  mdiAtom,
+  mdiFileKey
 } from '@mdi/js';
 
 export function GithubIcon(props) {
@@ -48,5 +49,12 @@ export function AtomFeedIcon(props) {
   const {...other} = props;
   return (
     <Icon path={mdiAtom} {...other}/>
+  );
+}
+
+export function OpenPgpKeyIcon(props) {
+  const {...other} = props;
+  return (
+    <Icon path={mdiFileKey} {...other}/>
   );
 }

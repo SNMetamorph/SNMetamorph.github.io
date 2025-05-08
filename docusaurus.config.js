@@ -108,6 +108,10 @@ const config = {
           {
             label: 'YouTube',
             href: 'https://www.youtube.com/@snmetamorph_yt',
+          },
+          {
+            label: 'OpenPGP Key',
+            href: 'https://snmetamorph.github.io/key.pgp',
           }
         ],
         copyright: `Copyright © ${new Date().getFullYear()} SNMetamorph. Built with Docusaurus.`,

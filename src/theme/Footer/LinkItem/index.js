@@ -9,7 +9,8 @@ import {
   YoutubeIcon, 
   RssFeedIcon, 
   AtomFeedIcon, 
-  MastodonIcon 
+  MastodonIcon,
+  OpenPgpKeyIcon 
 } from '../../../icons';
 
 function SuitableSocialIcon(props) {
@@ -26,6 +27,8 @@ function SuitableSocialIcon(props) {
     return (<RssFeedIcon {...other} />);
   else if (url.endsWith('atom.xml'))
     return (<AtomFeedIcon {...other} />);
+  else if (url.endsWith('key.pgp'))
+    return (<OpenPgpKeyIcon {...other} />);
   else
     return (<IconExternalLink/>);
 }

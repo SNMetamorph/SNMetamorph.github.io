@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://snmetamorph.github.io/pngquant-web/sitemap.xml

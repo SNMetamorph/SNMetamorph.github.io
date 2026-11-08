@@ -23,16 +23,26 @@ Asynchronous, cross-platform master server implementation for Xash3D FWGS engine
 
 [GitHub page](https://github.com/SNMetamorph/XashMS)  
 
+# icecast2mqtt
+Lightweight MQTT bridge for Icecast radio streams metadata, with opt-in Home Assistant compatibility. This service polls Icecast radio streams, obtaining their metadata and publishes it to MQTT topics. This is my first project written in the Golang.
+
+[GitHub page](https://github.com/SNMetamorph/icecast2mqtt)
+
 # Reverse-engineered procedural VFX from Silent Hill 3
 Reverse-engineered implementation of procedural texturing visual effect "Another World Evil" from Silent Hill 3. Demonstration program with reimplementation of original algorithm was made back in 2019, you could check how it looks in video demonstration below. Someday I will write post with explanations about this VFX algorithm and how I reverse-engineered it.
 
 [GitHub page](https://github.com/SNMetamorph/sh3-evil-effect)  
 [Video demonstration](http://www.youtube.com/watch?v=y1k65u5KCR0)
 
-# ESPHome component for JHS manufactured AC units
+# ESPHome component for JHS air conditioners
 Component for air conditioning units manufactured by JHS (Timberk, Hyundai, Scoole, and other brands), makes possible to control AC from Home Assistant through Wi-Fi connection using ESP8266/ESP32.  It works by using UART interface between Wi-Fi module and AC main board, and in this scheme ESP8266 or ESP32 are used as replacement for Wi-Fi module (even if AC unit does not have module out of the box).
 
 [GitHub page](https://github.com/SNMetamorph/esphome-jhs-ac-component)
+
+# ESPHome component for Eurgeen air dehumidifiers
+Component for air dehumidifiers manufactured by Eurgeen (Zhejiang Oulun Electric Co., Ltd.). These dehumidifiers are also known under such brands as Oulun, Songjing, Neoline, NeoClima, and others. However, since Eurgeen dehumidifiers primarily use Tuya MCU protocol, this component will also work with dehumidifiers from other manufacturers that also use this protocol.
+
+[GitHub page](https://github.com/SNMetamorph/esphome-eurgeen-dehumidifier)
 
 # Library for VFDs based on Futaba M202MD10C board
 Library for Arduino framework for convenient working with vacuum fluorescent displays (VFD) based on Futaba M202MD10C board.
